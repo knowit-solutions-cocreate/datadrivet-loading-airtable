@@ -1,9 +1,8 @@
+import warnings
+
+from dagster import EnvVar, ExperimentalWarning
 from dagster_embedded_elt.dlt import DagsterDltResource
 from dagster_snowflake import SnowflakeResource
-from dagster import EnvVar, ExperimentalWarning
-
-
-import warnings
 
 warnings.filterwarnings("ignore", category=ExperimentalWarning)
 

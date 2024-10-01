@@ -1,13 +1,13 @@
 ## How to run this script
 
 ```bash
-poetry run python pokemon.py
+poetry run python airtable.py
 ```
 
 ## How to view results
 
 ```bash
-poetry run dlt pipeline pokemon show
+poetry run dlt pipeline airtable show
 ```
 
 ## More DLT
