@@ -1,9 +1,10 @@
-from dagster import ScheduleDefinition, DefaultScheduleStatus
-from dagster_project.jobs import pokemon_job
+from dagster import DefaultScheduleStatus, ScheduleDefinition
 
-pokemon_schedule = ScheduleDefinition(
-    job=pokemon_job,
-    # Run on weekdays 1-5 @ 15:05
-    cron_schedule="15 5 * * 1-5",
+from dagster_project.jobs import airtable_job
+
+airtable_schedule = ScheduleDefinition(
+    job=airtable_job,
+    # Run on weekdays 1-5 @ 09:05
+    cron_schedule="09 5 * * 1-5",
     default_status=DefaultScheduleStatus.RUNNING,
 )
