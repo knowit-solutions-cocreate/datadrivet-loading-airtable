@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "pokemon"
+name = "airtable"
 version = "0.1.0"
 description = ""
-authors = ["Alexander Reinthal <alexander.reinthal@knowit.se>", "Pierre Oskarsson <pierre.oskarsson@knowit.se>"]
+authors = ["Mikaela Giegold <mikaela.giegold@knowit.se>"]
 readme = "README.md"
 package-mode = false
 
@@ -39,6 +39,8 @@ poetry-dotenv-plugin = "^0.1.0"
 enlighten = "^1.12.4"
 dagster-embedded-elt = "<0.25.0"
 dagster-pandera = "^0.24.1"
+ruff = "^0.6.8"
+black = "^24.8.0"
 
 [tool.poetry.group.dev.dependencies]
 pandas = "^2.2.2"
